@@ -1,6 +1,6 @@
 # **SkillUpPlus 2030+**
 
-Plataforma Digital Gamificada — Global Solution
+Plataforma Digital Gamificada com IA • FIAP — Global Solution
 
 ---
 
@@ -17,13 +17,14 @@ Plataforma Digital Gamificada — Global Solution
 **SkillUpPlus 2030+** é uma plataforma móvel desenvolvida em **React Native + Expo**, com foco em:
 
 * Aprendizagem contínua
+* IA generativa
 * Acessibilidade e inclusão
 * Gamificação
 * Autodesenvolvimento e microtrilhas
 * Assistência e automatização
 * Perfil profissional evolutivo
 
-A aplicação integra **trilhas, microcursos, missões, badges e autoavaliação**.
+A aplicação integra **trilhas, microcursos, missões, badges, assistente inteligente, autoavaliação e um modo de foco**.
 Todos os dados do usuário são persistidos localmente com **AsyncStorage**, incluindo sessão, progresso, XP, níveis e trilhas.
 
 ---
@@ -31,37 +32,72 @@ Todos os dados do usuário são persistidos localmente com **AsyncStorage**, inc
 # **Arquitetura do Projeto**
 
 ```
-GS/
-  ├── components/
-  │   ├── Avatar.tsx
-  │   ├── XPBar.tsx
-  │   ├── CustomDrawer.tsx
-  ├── data/
-  │   └── trails.ts
-  ├── screens/
-  │   ├── LoginScreen.tsx
-  │   ├── RegisterScreen.tsx
-  │   ├── HomeScreen.tsx
-  │   ├── ProfileScreen.tsx
-  │   ├── ProgressScreen.tsx
-  │   ├── AssistScreen.tsx
-  │   ├── CoursesScreen.tsx
-  │   ├── CourseDetailScreen.tsx
-  │   ├── LearningScreen.tsx
-  │   ├── SelfAssessmentScreen.tsx
-  │   ├── MissionsScreen.tsx
-  │   ├── TrailsScreen.tsx
-  │   └── TrailDetailScreen.tsx
-  ├── utils/
-  │   └── db.ts
-  │   ├── types.ts              
-  │   ├── style/
-  │   ├── palette.ts
-  │   └── styles.ts
-  │
-  ├── App.tsx
-  ├── index.ts
-  └── README.md
+gs/ 
+
+├── README.md 
+
+├── App.tsx 
+
+├── components/ 
+
+│   ├── Avatar.tsx 
+
+│   ├── CustomDrawer.tsx 
+
+│   └── XPBar.tsx 
+
+├── contexts/ 
+
+│   └── FocusContext.tsx 
+
+├── data/ 
+
+│   └── trails.ts 
+
+├── screens/ 
+
+│   ├── AssistScreen.tsx 
+
+│   ├── CourseDetailScreen.tsx 
+
+│   ├── CoursesScreen.tsx 
+
+│   ├── FocusTimerScreen.tsx 
+
+│   ├── HomeScreen.tsx 
+
+│   ├── IncludIAScreen.tsx 
+
+│   ├── LearningScreen.tsx 
+
+│   ├── LoginScreen.tsx 
+
+│   ├── MissionsScreen.tsx 
+
+│   ├── ProfileScreen.tsx 
+
+│   ├── ProgressScreen.tsx 
+
+│   ├── RegisterScreen.tsx 
+
+│   ├── SelfAssessmentScreen.tsx 
+
+│   ├── TrailDetailScreen.tsx 
+
+│   └── TrailsScreen.tsx 
+
+├── style/ 
+
+│   ├── palette.ts 
+
+│   └── styles.ts 
+
+└── utils/ 
+
+     ├── db.ts 
+
+     └── types.ts 
+
 ```
 
 ---
@@ -126,6 +162,21 @@ Exibe:
 * Email
 * Avatar (imagem personalizada)
 * Área de interesse (Picker configurado p/ iOS e Android)
+
+##  8. **Assistente Inteligente (IncludIA)**
+
+* Chat com IA (mock ou API real)
+* Acessibilidade e micro-feedbacks
+* Resposta automática caso não exista API configurada
+
+## 9. **Modo Foco **
+
+* Pomodoro
+* Pausa curta
+* Pausa longa
+* Timer funcional
+* Persistência do estado (focusMode)
+* Integração com o contexto global
 
 ---
 
