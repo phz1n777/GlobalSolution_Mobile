@@ -1,6 +1,6 @@
 # **SkillUpPlus 2030+**
 
-Plataforma Digital Gamificada — Global Solution
+Plataforma Digital Gamificada — Global Solution 2025.2
 
 ---
 
@@ -12,16 +12,9 @@ Plataforma Digital Gamificada — Global Solution
 
 ---
 
-## **Link do Projeto**
-
-**Snack Expo:**
-[[https://snack.expo.dev/@larissaestella/gs](https://snack.expo.dev/@larissaestella/gs)]
-
----
-
 ## **Visão Geral**
 
-**SkillUpPlus 2030+** é uma plataforma móvel desenvolvida em **React Native + Expo**, com foco em:
+**SkillUpPlus 2030+** é uma plataforma mobile desenvolvida em **React Native + Expo**, com foco em:
 
 * Aprendizagem contínua
 * Acessibilidade e inclusão
@@ -42,7 +35,7 @@ GS/
   ├── components/
   │   ├── Avatar.tsx
   │   ├── XPBar.tsx
-  │   └── CustomDrawer.tsx
+  │   ├── CustomDrawer.tsx
   ├── data/
   │   └── trails.ts
   ├── screens/
@@ -60,9 +53,9 @@ GS/
   │   ├── TrailsScreen.tsx
   │   └── TrailDetailScreen.tsx
   ├── utils/
-  │   ├── db.ts
-  │   └── types.ts              
-  ├── style/
+  │   └── db.ts
+  │   ├── types.ts              
+  │   ├── style/
   │   ├── palette.ts
   │   └── styles.ts
   │
@@ -132,7 +125,7 @@ Exibe:
 * Nome
 * Email
 * Avatar (imagem personalizada)
-* Área de interesse (Picker configurado p/ iOS e Android)
+* Área de interesse
 
 ---
 
@@ -161,8 +154,5 @@ Exibe:
 * **TypeScript**
 * **AsyncStorage** (persistência)
 * **React Navigation** (Stack, Drawer, Tabs, TopTabs)
-* **React Context API** (FocusContext)
 * **Expo Vector Icons**
 * **Picker**
-
-
